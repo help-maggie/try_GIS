@@ -71,11 +71,11 @@ to setup-patches
    set land-patches patches with [categ = "land"]
    set si-patches patches with [categ = "island"]
 
-  ask ocean-patches[ set zone "5"
-    if distance one-of si-patches < 16 [set zone "4"]
-    if distance one-of si-patches < 12 [set zone "3"]
-    if distance one-of si-patches < 8 [set zone "2"]
-    if distance one-of si-patches < 4 [set zone "1"]
+  ask patches[ set zone 5 ; 800m + away from Seal Island
+    if distance one-of si-patches < 16 [set zone 4] ;600-800m away from Seal Island
+    if distance one-of si-patches < 12 [set zone 3] ;400-600m away from Seal Island
+    if distance one-of si-patches < 8 [set zone 2] ;200-400m away from Seal Island
+    if distance one-of si-patches < 4 [set zone 1] ;0-200m away from Seal Island
   ]
 end
 
@@ -101,7 +101,7 @@ end
 to go
   ask sharks[
     move_sharks   ;run move_sharks function
-;    eat-seals    ;run eat-seals function
+    eat-seals    ;run eat-seals function
   ]
 
   ifelse Light_conditions? [set light_level_seals 0.4 set light_level_sharks 0.15] [set light_level_seals 0.6 set light_level_sharks 0.85]
@@ -411,9 +411,9 @@ to move_seals
            ifelse distancexy center_x center_y > 0.2
            [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
            [
-          ifelse distance one-of si-patches > 20
+           ifelse distance one-of si-patches > 20
             [facexy (random 10 ) (random 10 ) forward 3.3]
-            [setxy 0 0 ]
+            [move-to one-of si-patches ]
             ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
            ]
            ]
@@ -427,49 +427,44 @@ end
 ;
 to eat-seals
    ask seals[
-    ask patch-here[
-      if zone = "1"[
+      if zone = 1[
       set pred_dis  0.195 * light_level_sharks
 ;      if random-float 1 < 0.195 ;each seal 0m-200m from seal island has a 0.195 chance of being eaten every tick. That is a a 0.39 chance of predation happening and 0.5 chance being successful
-      seal_predation_grouesize
-      seal_predation_grouesize_in]
-    ]
-    ask patch-here[
-      if zone = "2"[
+      seal_predation_groupsize
+      seal_predation_groupsize_in]
+
+      if zone = 2[
       set pred_dis  0.1408 * light_level_sharks
 ;      if random-float 1 < 0.1408 ;each seal 200m-400m from seal island has a 0.1408 chance of being eaten every tick. That is a a 0.32 chance of predation happening and 0.44 chance being successful
-      seal_predation_grouesize
-        seal_predation_grouesize_in]
-    ]
-    ask patch-here[
-      if zone = "3"[
+      seal_predation_groupsize
+      seal_predation_groupsize_in]
+
+      if zone = 3[
       set pred_dis  0.0492 * light_level_sharks
 ;      if random-float 1 < 0.0492 ;each seal 400m-600m from seal island has a 0.0492 chance of being eaten every tick. That is a a 0.12 chance of predation happening and 0.41 chance being successful
-      seal_predation_grouesize
-      seal_predation_grouesize_in]
-    ]
-    ask patch-here[
-      if zone = "4"[
+      seal_predation_groupsize
+      seal_predation_groupsize_in]
+
+      if zone = 4[
       set pred_dis  0.0408 * light_level_sharks
 ;      if random-float 1 < 0.0408 ;each seal 600m-800m from seal island has a 0.0408 chance of being eaten every tick. That is a a 0.08 chance of predation happening and 0.51 chance being successful
-      seal_predation_grouesize
-      seal_predation_grouesize_in]
-    ]
-    ask patch-here[
-      if zone = "5"[
+      seal_predation_groupsize
+      seal_predation_groupsize_in]
+
+      if zone = 5[
       set pred_dis  0.0549 * light_level_sharks
 ;      if random-float 1 < 0.0549 ;each seal 800m+ from seal island has a 0.0549 chance of being eaten every tick. That is a a 0.9 chance of predation happening and 0.61 chance being successful
-      seal_predation_grouesize
-      seal_predation_grouesize_in]
-    ]
+      seal_predation_groupsize
+      seal_predation_groupsize_in]
   ]
 
 end
 
-to seal_predation_grouesize
+to seal_predation_groupsize
   foreach group_num_list
       [x -> let seal_num (count seals with [x = label])
         let num .1
+;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
             set eaten_seals eaten_seals + 1 ;adds to total outgoing seals that died
@@ -503,10 +498,11 @@ to seal_predation_grouesize
   ]
 end
 
-to seal_predation_grouesize_in
+to seal_predation_groupsize_in
   foreach group_num_list_in
       [x -> let seal_num (count seals with [x = label])
         let num .1
+;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
             set eaten_seals_in eaten_seals_in + 1 ;adds to total incoming seals that died
@@ -609,7 +605,7 @@ SWITCH
 162
 Light_conditions?
 Light_conditions?
-1
+0
 1
 -1000
 
