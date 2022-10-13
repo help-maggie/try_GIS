@@ -104,7 +104,15 @@ to go
     eat-seals    ;run eat-seals function
   ]
 
-  ifelse Light_conditions? [set light_level_seals 0.4 set light_level_sharks 0.15] [set light_level_seals 0.6 set light_level_sharks 0.85]
+  ifelse LIGHT_LEVEL <= 300 [set light_level_seals 0.4] [set light_level_seals 0.6]
+  if LIGHT_LEVEL <= 200 [set light_level_sharks 0.4039]
+  if LIGHT_LEVEL > 200 and LIGHT_LEVEL <= 300 [set light_level_sharks 0.069]
+  if LIGHT_LEVEL > 300 and LIGHT_LEVEL <= 400 [set light_level_sharks 0.0197]
+  if LIGHT_LEVEL > 400 and LIGHT_LEVEL <= 600 [set light_level_sharks 0.0197]
+  if LIGHT_LEVEL > 600 and LIGHT_LEVEL <= 800 [set light_level_sharks 0.0049]
+  if LIGHT_LEVEL > 800 and LIGHT_LEVEL <= 1000 [set light_level_sharks 0.0099]
+  if LIGHT_LEVEL > 1000 and LIGHT_LEVEL <= 1500 [set light_level_sharks 0.0099]
+
 
 ;  foreach gis:feature-list-of SEAL_ISLAND [ this-vector-feature ->
 ;    gis:create-turtles-inside-polygon this-vector-feature seals 10 ]
@@ -383,7 +391,7 @@ to set_direction
 end
 
 to move_sharks
-  let next-patch ocean-patches in-radius 4
+  let next-patch ocean-patches in-radius 1  ;average shark travels 0.5 m/s -> 4 patches per tick (Not shown in model:They produce burst of speed up to 11.9m/s (42.84 km/hour) to catch prey)
   move-to one-of next-patch
 end
 
@@ -398,6 +406,7 @@ to move_seals
            ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
             [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
             [forward 2.5]
+          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
           ask seals with [x = label] [if abs(xcor) > 674 or abs(ycor) > 518 [set seals_foraging seals_foraging + 1 die]]
            ]
        ]
@@ -414,6 +423,7 @@ to move_seals
            ifelse distance one-of si-patches > 20
             [facexy (random 10 ) (random 10 ) forward 3.3]
             [move-to one-of si-patches ]
+           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
             ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
            ]
            ]
@@ -598,17 +608,6 @@ NIL
 NIL
 1
 
-SWITCH
-1400
-129
-1566
-162
-Light_conditions?
-Light_conditions?
-0
-1
--1000
-
 MONITOR
 1385
 195
@@ -674,6 +673,21 @@ seals_home
 17
 1
 11
+
+SLIDER
+1401
+139
+1682
+172
+LIGHT_LEVEL
+LIGHT_LEVEL
+0
+1500
+550.0
+10
+1
+10^-6 E (lux per m^2)
+HORIZONTAL
 
 @#$#@#$#@
 ## WHAT IS IT?
