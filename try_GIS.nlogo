@@ -4,7 +4,7 @@ extensions[
 ]
 
 globals[
-  LAND_FILE
+  my-dataset
   SEAL_ISLAND
 ;  patch_size
 
@@ -21,9 +21,10 @@ globals[
   group_num_in
   group_num_distribution_list
   group_num_distribution_list_in
-  light_level_sharks
   light_level_seals
   starting_point
+
+
 
   si-patches
   ocean-patches
@@ -34,21 +35,58 @@ breed [sharks shark]
 breed [seals seal]
 
 seals-own[  group_center]
-patches-own[categ zone]
+patches-own[categ zone ID centroid art_light LIGHT_LEVEL light_level_sharks]
 
 to setup
   clear-all
-  set LAND_FILE gis:load-dataset "/Users/sullens/Spatial/CLIPPED_FALSE_BAY_2.shp"
+   set my-dataset gis:load-dataset "/Users/sullens/Spatial/light_pol_poly/light_pol_poly.shp"
   set SEAL_ISLAND gis:load-dataset "/Users/sullens/Spatial/CLIPPED_SEAL_ISLAND.shp"
-  gis:set-world-envelope gis:envelope-of LAND_FILE
+  gis:set-world-envelope (gis:envelope-of my-dataset)
   gis:set-drawing-color white
-  gis:draw LAND_FILE 1
-  gis:draw SEAL_ISLAND 1
-  gis:fill LAND_FILE 1
-  gis:fill SEAL_ISLAND 1
+  gis:draw my-dataset 1
 
-  resize-world -674 674 -518 518 ; Size of area is 67403.784m by 51763.885m Scale of 1/50 --> each patch 50x50m
-  set-patch-size 1
+  let i  1
+ foreach gis:feature-list-of my-dataset [vector-feature ->
+    ask patches gis:intersecting vector-feature[
+      set centroid gis:location-of gis:centroid-of vector-feature
+      ask patch item 0 centroid item 1 centroid
+      [set ID i
+      ]
+    ]
+    set i i + 1
+ ]
+
+  ask patches with [ID > 0] [
+
+    if ID = 22[gis:set-drawing-color white]
+    if ID = 24[gis:set-drawing-color red]
+    if ID = 25[gis:set-drawing-color orange]
+    if ID = 26[gis:set-drawing-color yellow]
+    if ID = 27[gis:set-drawing-color yellow]
+    if ID = 28[gis:set-drawing-color orange]
+    if ID = 29[gis:set-drawing-color yellow]
+    if ID = 30[gis:set-drawing-color orange]
+    if ID = 31[gis:set-drawing-color yellow]
+    if ID = 32[gis:set-drawing-color yellow]
+    if ID = 33[gis:set-drawing-color yellow]
+    if ID = 34[gis:set-drawing-color green]
+    if ID = 35[gis:set-drawing-color green]
+    if ID = 36[gis:set-drawing-color green]
+    if ID = 37[gis:set-drawing-color green]
+    if ID = 38[gis:set-drawing-color blue]
+    if ID = 39[gis:set-drawing-color blue]
+    if ID = 40[gis:set-drawing-color white]
+    if ID = 41[gis:set-drawing-color blue]
+    if ID = 42[gis:set-drawing-color blue]
+
+
+   gis:fill item (ID - 1) gis:feature-list-of my-dataset 2.0
+  ]
+ gis:set-drawing-color white
+ gis:draw SEAL_ISLAND 1
+ gis:fill SEAL_ISLAND 1
+ resize-world -674 674 -518 518 ; Size of area is 67403.784m by 51763.885m Scale of 1/50 --> each patch 50x50m
+ set-patch-size 1
 
   setup-patches      ;preforms "setup-patches" function below
   setup-sharks       ; preforms "setup-sharks" function below
@@ -61,11 +99,19 @@ to setup
 end
 
 to setup-patches
-  ask patches [ set pcolor blue set categ "ocean"]
+  ask patches [set categ "land"]
+  ask patches [
+    if ID = 25[set categ "ocean"]
+    if ID = 29[set categ "ocean"]
+    if ID = 30[set categ "ocean"]
+    if ID = 33[set categ "ocean"]
+    if ID = 34[set categ "ocean"]
+    if ID = 36[set categ "ocean"]
+    if ID = 41[set categ "ocean"]
+  ]
+
   ask patches gis:intersecting SEAL_ISLAND[
       set categ "island"]
-  ask patches gis:intersecting LAND_FILE[
-      set categ "land"]
 
    set ocean-patches patches with [categ = "ocean"]
    set land-patches patches with [categ = "land"]
@@ -77,6 +123,27 @@ to setup-patches
     if distance one-of si-patches < 8 [set zone 2] ;200-400m away from Seal Island
     if distance one-of si-patches < 4 [set zone 1] ;0-200m away from Seal Island
   ]
+
+  ifelse Light_Pollution = true [
+    ask patches with [pcolor = blue] [set art_light (0.33 * natural_light_level) set LIGHT_LEVEL (art_light + natural_light_level)]
+    ask patches with [pcolor = green] [set art_light natural_light_level set LIGHT_LEVEL (art_light + natural_light_level)]
+    ask patches with [pcolor = yellow] [set art_light (3 * natural_light_level) set LIGHT_LEVEL (art_light + natural_light_level)]
+    ask patches with [pcolor = orange] [set art_light (9 * natural_light_level) set LIGHT_LEVEL (art_light + natural_light_level)]
+    ask patches with [pcolor = red] [set art_light (27 * natural_light_level) set LIGHT_LEVEL (art_light + natural_light_level)]
+  ]
+  [ask patches[set LIGHT_LEVEL natural_light_level]
+  ]
+
+  ask patches [
+  if LIGHT_LEVEL <= 200 [set light_level_sharks 0.4039]
+  if LIGHT_LEVEL > 200 and LIGHT_LEVEL <= 300 [set light_level_sharks 0.069]
+  if LIGHT_LEVEL > 300 and LIGHT_LEVEL <= 400 [set light_level_sharks 0.0197]
+  if LIGHT_LEVEL > 400 and LIGHT_LEVEL <= 600 [set light_level_sharks 0.0197]
+  if LIGHT_LEVEL > 600 and LIGHT_LEVEL <= 800 [set light_level_sharks 0.0049]
+  if LIGHT_LEVEL > 800 and LIGHT_LEVEL <= 1000 [set light_level_sharks 0.0099]
+  if LIGHT_LEVEL > 1000 and LIGHT_LEVEL <= 1500 [set light_level_sharks 0.0099]
+  ]
+
 end
 
 to setup-sharks
@@ -104,15 +171,7 @@ to go
     eat-seals    ;run eat-seals function
   ]
 
-  ifelse LIGHT_LEVEL <= 300 [set light_level_seals 0.4] [set light_level_seals 0.6]
-  if LIGHT_LEVEL <= 200 [set light_level_sharks 0.4039]
-  if LIGHT_LEVEL > 200 and LIGHT_LEVEL <= 300 [set light_level_sharks 0.069]
-  if LIGHT_LEVEL > 300 and LIGHT_LEVEL <= 400 [set light_level_sharks 0.0197]
-  if LIGHT_LEVEL > 400 and LIGHT_LEVEL <= 600 [set light_level_sharks 0.0197]
-  if LIGHT_LEVEL > 600 and LIGHT_LEVEL <= 800 [set light_level_sharks 0.0049]
-  if LIGHT_LEVEL > 800 and LIGHT_LEVEL <= 1000 [set light_level_sharks 0.0099]
-  if LIGHT_LEVEL > 1000 and LIGHT_LEVEL <= 1500 [set light_level_sharks 0.0099]
-
+ifelse natural_light_level <= 300 / 4 [set light_level_seals 0.4] [set light_level_seals 0.6]
 
 ;  foreach gis:feature-list-of SEAL_ISLAND [ this-vector-feature ->
 ;    gis:create-turtles-inside-polygon this-vector-feature seals 10 ]
@@ -132,76 +191,7 @@ to go
         sprout_seals_out]
   ]
 
-
-;  let dummy_var random-float 1
-;  if dummy_var < 0.106[ ; East side
-;      ask patch max-pxcor (random max-pycor)[         ;sprouts a number of seals from east every time step with some probability of occuring based on what time of day it is
-;          if ticks <= 60[set a_2 .3708 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 60 and ticks <= 120)[set a_2 .23596  * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 120 and ticks <= 180)[set a_2 .14232 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 180 and ticks <= 240)[set a_2 .11236 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 240 and ticks <= 300)[set a_2 .0824 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals
-;            sprout_seals_in]
-;        ]
-;  ]
-;
-;  if dummy_var > 0.106 and dummy_var < 0.227[ ; North side
-;    ask patch (random max-pxcor) max-pycor[         ;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
-;          if ticks <= 60[set a_2 .3708 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 60 and ticks <= 120)[set a_2 .23596 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 120 and ticks <= 180)[set a_2 .14232 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 180 and ticks <= 240)[set a_2 .11236 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 240 and ticks <= 300)[set a_2 .0824 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals
-;            sprout_seals_in]
-;        ]
-;  ]
-;
-;    if dummy_var > 0.227 and dummy_var < 0.59[ ; South side
-;      ask patch (random max-pxcor) min-pycor [         ;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
-;          if ticks <= 60[set a_2 .3708 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 60 and ticks <= 120)[set a_2 .23596 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 120 and ticks <= 180)[set a_2 .14232 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 180 and ticks <= 240)[set a_2 .11236 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 240 and ticks <= 300)[set a_2 .0824 * light_level_seals
-;            sprout_seals_in]
-;          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals
-;            sprout_seals_in]
-;        ]
-;  ]
-;
-;    if dummy_var > 0.59[ ; West side
-;      ask patch min-pxcor (random max-pycor) [         ;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
-;            if ticks <= 60[set a_2 .3708 * light_level_seals
-;              sprout_seals_in]
-;            if (ticks > 60 and ticks <= 120)[set a_2 .23596
-;              sprout_seals_in]
-;            if (ticks > 120 and ticks <= 180)[set a_2 .14232
-;              sprout_seals_in]
-;            if (ticks > 180 and ticks <= 240)[set a_2 .11236
-;              sprout_seals_in]
-;            if (ticks > 240 and ticks <= 300)[set a_2 .0824
-;              sprout_seals_in]
-;            if (ticks > 300 and ticks <= 360)[set a_2 .0637
-;              sprout_seals_in]
-;          ]
-;  ]
-   ask patch (random max-pxcor) min-pycor [         ;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
+   ask patch (-300 + (random 600)) min-pycor [         ;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
           if ticks <= 60[set a_2 .3708 * light_level_seals
             sprout_seals_in]
           if (ticks > 60 and ticks <= 120)[set a_2 .23596 * light_level_seals
@@ -219,6 +209,7 @@ to go
   ask seals[
     move_seals    ;run move_seals function
   ]
+
   tick
 
   if ticks > 360 ;resets everything every 360 ticks to simulate restarting every day since data starts aroung 730 and ends 1330
@@ -230,12 +221,12 @@ end
 
 to sprout_seals_out
   let dummy_var random-float 1
-
   if dummy_var < 0.003 * a
-  [set group_num group_num + 1
+  [let shift random 90
+    set group_num group_num + 1
    set group_num_distribution_list lput 2 group_num_distribution_list
    sprout-seals 2
-  [ set_direction
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
@@ -244,10 +235,11 @@ to sprout_seals_out
   ]
 
   if dummy_var > 0.003 * a and dummy_var < .0172 * a
-  [ set group_num group_num + 1
+  [ let shift random 90
+    set group_num group_num + 1
     set group_num_distribution_list lput 6 group_num_distribution_list
     sprout-seals 6
-  [ set_direction
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
@@ -256,10 +248,11 @@ to sprout_seals_out
   ]
 
     if dummy_var > 0.0172 * a and dummy_var < .1872 * a
-  [ set group_num group_num + 1
+  [ let shift random 90
+    set group_num group_num + 1
     set group_num_distribution_list lput 5 group_num_distribution_list
     sprout-seals 5
-  [ set_direction
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
@@ -268,10 +261,11 @@ to sprout_seals_out
   ]
 
   if dummy_var > 0.1872 * a and dummy_var < .6844 * a
- [ set group_num group_num + 1
+ [ let shift random 90
+    set group_num group_num + 1
     set group_num_distribution_list lput 3 group_num_distribution_list
     sprout-seals 3
-  [ set_direction
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
@@ -280,10 +274,11 @@ to sprout_seals_out
   ]
 
 if dummy_var > 0.6844 * a and dummy_var <  a
- [ set group_num group_num + 1
+ [ let shift random 90
+   set group_num group_num + 1
     set group_num_distribution_list lput 4 group_num_distribution_list
     sprout-seals 4
-  [ set_direction
+  [ set heading 180
     set shape "dot"
     set color grey
     set size 10
@@ -369,26 +364,6 @@ to sprout_seals_in
   ]
 end
 
-;;;;set_direction gives each seal the probability of of chosing N,S,E,or W with most seals choosing S.
-;;;; Then, all turtles in that group face that direction, but not necessarily the same exact point in that direction.
-
-to set_direction
-  let dummy_var random-float 1
-;            if (dummy_var < 0.022)                      ; North
-;            [ let point (min-pxcor + (random (abs(min-pxcor) + max-pxcor)))
-;                 facexy point max-pycor]
-;            if (dummy_var > 0.022 and dummy_var < .066) ; West
-;            [let point (min-pycor + (random (abs(min-pycor) + max-pycor)))
-;                facexy min-pxcor point]
-;            if (dummy_var > 0.066 and dummy_var < .1759) ; East
-;            [let point (min-pycor + (random (abs(min-pycor) + max-pycor)))
-;                 facexy max-pxcor  point]
-;            if (dummy_var > .1759)                      ; South
-;            [let point (min-pxcor + (random (abs(min-pxcor) + max-pxcor)))
-;                 facexy point min-pycor]
-  let point (min-pxcor + (random (abs(min-pxcor) + max-pxcor)))
-                 facexy point min-pycor
-end
 
 to move_sharks
   let next-patch ocean-patches in-radius 1  ;average shark travels 0.5 m/s -> 4 patches per tick (Not shown in model:They produce burst of speed up to 11.9m/s (42.84 km/hour) to catch prey)
@@ -399,36 +374,35 @@ end
 ;;;;move_seals have seal groups move towards a given direction (N,S,E,or W) and if the seperate too much
 ;;;; they move back towards the center of the group
 to move_seals
-  foreach group_num_list
-      [x -> ask seals with [x = label]
-          [let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
-            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-            [forward 2.5]
-          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-          ask seals with [x = label] [if abs(xcor) > 674 or abs(ycor) > 518 [set seals_foraging seals_foraging + 1 die]]
-           ]
-       ]
- ; ask seals [if abs(xcor) > 174 or abs(ycor) > 174 [set seals_foraging seals_foraging + 1 die]]
+;  foreach group_num_list
+;      [x -> ask seals with [x = label]
+;          [
+;           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+;           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
+;            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+;            [facexy 0 -518 forward 3.3]
+;          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+;          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
+;           ]
+;       ]
 ;
-  foreach group_num_list_in
-      [x -> ask seals with [x = label]
-          [
-          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-           ifelse distancexy center_x center_y > 0.2
-           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-           [
-           ifelse distance one-of si-patches > 20
-            [facexy (random 10 ) (random 10 ) forward 3.3]
-            [move-to one-of si-patches ]
-           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
-           ]
-           ]
-       ]
-  ;forward 20.5
+;  foreach group_num_list_in
+;      [x -> ask seals with [x = label]
+;          [
+;          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+;           ifelse distancexy center_x center_y > 0.2
+;           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+;           [forward 3.3]
+;           ifelse distance one-of si-patches > 20
+;            [facexy (random 10 ) (random 10 ) forward 3.3]
+;            [move-to one-of si-patches ]
+;           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+;            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
+;           ]
+;           ]
+forward 3.3
 end
 
 ;
@@ -561,8 +535,8 @@ GRAPHICS-WINDOW
 1
 1
 0
-1
-1
+0
+0
 1
 -674
 674
@@ -677,17 +651,28 @@ seals_home
 SLIDER
 1401
 139
-1682
+1716
 172
-LIGHT_LEVEL
-LIGHT_LEVEL
+natural_light_level
+natural_light_level
 0
-1500
-550.0
+375
+370.0
 10
 1
 10^-6 E (lux per m^2)
 HORIZONTAL
+
+SWITCH
+1521
+38
+1670
+71
+Light_Pollution
+Light_Pollution
+0
+1
+-1000
 
 @#$#@#$#@
 ## WHAT IS IT?
