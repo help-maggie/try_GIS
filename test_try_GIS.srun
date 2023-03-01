@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=1-00:00:00
+#SBATCH --mem=50G
+#SBATCH --output=%x_%j_slurm.out
+#SBATCH --job-name=TryNLogo
+#SBATCH --cpus-per-task 40
+
+module load NetLogo/6.2.2-64 Java/17.0.4
+
+
+netlogo-headless.sh --version 
+date
+my_experiment="TestTrial_seed"
+my_output_prefix="TestTrial"
+
+time netlogo-headless.sh \
+  --model        "try_GIS.nlogo" \
+  --experiment   "$my_experiment" \
+  --table        "${my_output_prefix}${my_experiment}_table_${SLURM_JOB_NAME}.csv" \
+  --spreadsheet  "${my_output_prefix}${my_experiment}_spreadsheet_${SLURM_JOB_NAME}.csv" \
+  --threads      "${SLURM_CPUS_PER_TASK:-$SLURM_CPUS_ON_NODE}"
+
+date
+
+
+
