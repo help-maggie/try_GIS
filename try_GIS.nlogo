@@ -35,7 +35,7 @@ breed [sharks shark]
 breed [seals seal]
 
 seals-own[  group_center]
-patches-own[categ zone ID centroid art_light LIGHT_LEVEL light_level_sharks]
+patches-own[categ zone ID id2 centroid art_light LIGHT_LEVEL light_level_sharks]
 
 to setup
   clear-all
@@ -47,11 +47,10 @@ to setup
 
   let i  1
  foreach gis:feature-list-of my-dataset [vector-feature ->
-    ask patches gis:intersecting vector-feature[
+    ask patches gis:intersecting vector-feature[ set id2 i
       set centroid gis:location-of gis:centroid-of vector-feature
       ask patch item 0 centroid item 1 centroid
-      [set ID i
-      ]
+      [set ID i]
     ]
     set i i + 1
  ]
@@ -101,13 +100,13 @@ end
 to setup-patches
   ask patches [set categ "land"]
   ask patches [
-    if ID = 25[set categ "ocean"]
-    if ID = 29[set categ "ocean"]
-    if ID = 30[set categ "ocean"]
-    if ID = 33[set categ "ocean"]
-    if ID = 34[set categ "ocean"]
-    if ID = 36[set categ "ocean"]
-    if ID = 41[set categ "ocean"]
+    if id2 = 25[set categ "ocean"]
+    if id2 = 29[set categ "ocean"]
+    if id2 = 30[set categ "ocean"]
+    if id2 = 33[set categ "ocean"]
+    if id2 = 34[set categ "ocean"]
+    if id2 = 36[set categ "ocean"]
+    if id2 = 41[set categ "ocean"]
   ]
 
   ask patches gis:intersecting SEAL_ISLAND[
@@ -147,7 +146,7 @@ to setup-patches
 end
 
 to setup-sharks
-  create-sharks 46
+  create-sharks 128
   ask sharks[ move-to one-of ocean-patches] ;creates initial sharks values and have them start at random coordinates
   ask sharks [ set shape "dot" set color magenta - 2 set size 10]
 end
@@ -168,7 +167,7 @@ end
 to go
   ask sharks[
     move_sharks   ;run move_sharks function
-    eat-seals    ;run eat-seals function
+    eat-seals   ;run eat-seals function
   ]
 
 ifelse natural_light_level <= 300 / 4 [set light_level_seals 0.4] [set light_level_seals 0.6]
@@ -374,35 +373,35 @@ end
 ;;;;move_seals have seal groups move towards a given direction (N,S,E,or W) and if the seperate too much
 ;;;; they move back towards the center of the group
 to move_seals
-;  foreach group_num_list
-;      [x -> ask seals with [x = label]
-;          [
-;           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-;           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
-;            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-;            [facexy 0 -518 forward 3.3]
-;          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-;          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
-;           ]
-;       ]
-;
-;  foreach group_num_list_in
-;      [x -> ask seals with [x = label]
-;          [
-;          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-;           ifelse distancexy center_x center_y > 0.2
-;           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-;           [forward 3.3]
-;           ifelse distance one-of si-patches > 20
-;            [facexy (random 10 ) (random 10 ) forward 3.3]
-;            [move-to one-of si-patches ]
-;           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-;            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
-;           ]
-;           ]
-forward 3.3
+  foreach group_num_list
+      [x -> ask seals with [x = label]
+          [
+           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
+            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+          [facexy 0 -518 forward 3.3]
+          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
+           ]
+       ]
+
+  foreach group_num_list_in
+      [x -> ask seals with [x = label]
+          [
+          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+           ifelse distancexy center_x center_y > 0.2
+           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+          [forward 3.3]
+           ifelse distance one-of si-patches > 20
+            [facexy (random 10 ) (random 10 ) forward 3.3]
+            [move-to one-of si-patches ]
+           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
+           ]
+           ]
+;forward 3.3
 end
 
 ;
@@ -410,7 +409,7 @@ end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
 to eat-seals
-   ask seals[
+   ask seals[ if any? sharks-here[
       if zone = 1[
       set pred_dis  0.195 * light_level_sharks
 ;      if random-float 1 < 0.195 ;each seal 0m-200m from seal island has a 0.195 chance of being eaten every tick. That is a a 0.39 chance of predation happening and 0.5 chance being successful
@@ -440,7 +439,7 @@ to eat-seals
 ;      if random-float 1 < 0.0549 ;each seal 800m+ from seal island has a 0.0549 chance of being eaten every tick. That is a a 0.9 chance of predation happening and 0.61 chance being successful
       seal_predation_groupsize
       seal_predation_groupsize_in]
-  ]
+  ]]
 
 end
 
@@ -542,8 +541,8 @@ GRAPHICS-WINDOW
 674
 -518
 518
-0
-0
+1
+1
 1
 ticks
 30.0
