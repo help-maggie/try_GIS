@@ -1019,6 +1019,25 @@ NetLogo 6.2.2
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
+<experiments>
+  <experiment name="test_experiment" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="500"/>
+    <metric>count seals</metric>
+    <metric>group_num</metric>
+    <metric>(group_num_in - 1000)</metric>
+    <metric>eaten_seals + eaten_seals_in</metric>
+    <metric>seals_foraging</metric>
+    <metric>seals_home</metric>
+    <enumeratedValueSet variable="natural_light_level">
+      <value value="370"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Light_Pollution">
+      <value value="true"/>
+    </enumeratedValueSet>
+  </experiment>
+</experiments>
 @#$#@#$#@
 @#$#@#$#@
 default
