@@ -39,8 +39,8 @@ patches-own[categ zone ID id2 centroid art_light LIGHT_LEVEL light_level_sharks]
 
 to setup
   clear-all
-   set my-dataset gis:load-dataset "/Users/sullens/Spatial/light_pol_poly/light_pol_poly.shp"
-  set SEAL_ISLAND gis:load-dataset "/Users/sullens/Spatial/CLIPPED_SEAL_ISLAND.shp"
+   set my-dataset gis:load-dataset "light_pol_poly.shp"
+  set SEAL_ISLAND gis:load-dataset "CLIPPED_SEAL_ISLAND.shp"
   gis:set-world-envelope (gis:envelope-of my-dataset)
   gis:set-drawing-color white
   gis:draw my-dataset 1
