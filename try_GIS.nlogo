@@ -372,36 +372,36 @@ end
 
 ;;;;move_seals have seal groups move towards a given direction (N,S,E,or W) and if the seperate too much
 ;;;; they move back towards the center of the group
-to move_seals
-  foreach group_num_list
-      [x -> ask seals with [x = label]
-          [
-           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
-            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-          [facexy 0 -518 forward 3.3]
-          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
-           ]
-       ]
-
-  foreach group_num_list_in
-      [x -> ask seals with [x = label]
-          [
-          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-           ifelse distancexy center_x center_y > 0.2
-           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-          [forward 3.3]
-           ifelse distance one-of si-patches > 20
-            [facexy (random 10 ) (random 10 ) forward 3.3]
-            [move-to one-of si-patches ]
-           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
-           ]
-           ]
-;forward 3.3
+;to move_seals
+;  foreach group_num_list
+;      [x -> ask seals with [x = label]
+;          [
+;           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+;           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
+;            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+;          [facexy 0 -518 forward 3.3]
+;          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+;          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
+;           ]
+;       ]
+;
+;  foreach group_num_list_in
+;      [x -> ask seals with [x = label]
+;          [
+;          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+;           ifelse distancexy center_x center_y > 0.2
+;           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+;          [forward 3.3]
+;           ifelse distance one-of si-patches > 20
+;            [facexy (random 10 ) (random 10 ) forward 3.3]
+;            [move-to one-of si-patches ]
+;           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+;            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
+;           ]
+;           ]
+forward 3.3
 end
 
 ;
