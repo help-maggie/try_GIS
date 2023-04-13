@@ -39,8 +39,8 @@ patches-own[categ zone ID id2 centroid art_light LIGHT_LEVEL light_level_sharks]
 
 to setup
   clear-all
-   set my-dataset gis:load-dataset "light_pol_poly.shp"
-  set SEAL_ISLAND gis:load-dataset "CLIPPED_SEAL_ISLAND.shp"
+   set my-dataset gis:load-dataset "/home/msullens/git/try_GIS/light_pol_poly.shp"
+  set SEAL_ISLAND gis:load-dataset "/home/msullens/git/try_GIS/CLIPPED_SEAL_ISLAND.shp"
   gis:set-world-envelope (gis:envelope-of my-dataset)
   gis:set-drawing-color white
   gis:draw my-dataset 1
@@ -372,7 +372,7 @@ end
 
 ;;;;move_seals have seal groups move towards a given direction (N,S,E,or W) and if the seperate too much
 ;;;; they move back towards the center of the group
-;to move_seals
+to move_seals
 ;  foreach group_num_list
 ;      [x -> ask seals with [x = label]
 ;          [
