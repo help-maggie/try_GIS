@@ -398,7 +398,7 @@ to move_seals
             [facexy (random 10 ) (random 10 ) forward 3.3]
             [move-to one-of si-patches ]
            if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
+            ask seals with [x = label] [if distance one-of si-patches < 8  [set seals_home seals_home + 1 die]]
            ]
            ]
 ;forward 3.3
