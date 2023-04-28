@@ -1,4 +1,3 @@
-
 "[run number]","natural_light_level","Light_Pollution","[step]","count seals","group_num","(group_num_in - 1000)","eaten_seals + eaten_seals_in","seals_foraging","seals_home"
 "1","370","true","0","0","0","0","0","0","0"
 "1","370","true","1","0","0","0","0","0","0"
