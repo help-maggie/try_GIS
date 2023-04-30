@@ -39,8 +39,8 @@ patches-own[categ zone ID id2 centroid art_light LIGHT_LEVEL light_level_sharks]
 
 to setup
   clear-all
-   set my-dataset gis:load-dataset "/Users/sullens/Spatial/light_pol_poly/light_pol_poly.shp"
-  set SEAL_ISLAND gis:load-dataset "/Users/sullens/Spatial/CLIPPED_SEAL_ISLAND.shp"
+   set my-dataset gis:load-dataset "light_pol_poly.shp"
+  set SEAL_ISLAND gis:load-dataset "CLIPPED_SEAL_ISLAND.shp"
   gis:set-world-envelope (gis:envelope-of my-dataset)
   gis:set-drawing-color white
   gis:draw my-dataset 1
@@ -372,36 +372,36 @@ end
 
 ;;;;move_seals have seal groups move towards a given direction (N,S,E,or W) and if the seperate too much
 ;;;; they move back towards the center of the group
-;to move_seals
-;  foreach group_num_list
-;      [x -> ask seals with [x = label]
-;          [
-;           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-;           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
-;            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-;          [facexy 0 -518 forward 3.3]
-;          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-;          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
-;           ]
-;       ]
-;
-;  foreach group_num_list_in
-;      [x -> ask seals with [x = label]
-;          [
-;          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
-;           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
-;           ifelse distancexy center_x center_y > 0.2
-;           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
-;          [forward 3.3]
-;           ifelse distance one-of si-patches > 20
-;            [facexy (random 10 ) (random 10 ) forward 3.3]
-;            [move-to one-of si-patches ]
-;           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
-;            ask seals with [x = label] [if distance one-of si-patches < 3.3  [set seals_home seals_home + 1 die]]
-;           ]
-;           ]
-forward 3.3
+to move_seals
+  foreach group_num_list
+      [x -> ask seals with [x = label]
+          [
+           let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+           ifelse distancexy center_x center_y > 0.2 ;seals stay in groups with range of 10m
+            [facexy center_x center_y forward 3.3] ; average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+          [facexy 0 -518 forward 3.3]
+          if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+          ask seals with [x = label] [if abs(xcor) > 670 or abs(ycor) > 514 [set seals_foraging seals_foraging + 1 die]]
+           ]
+       ]
+
+  foreach group_num_list_in
+      [x -> ask seals with [x = label]
+          [
+          let center_x mean [ xcor ] of seals with [x = label] ;x_cor of group center
+           let center_y mean [ ycor ] of seals with [x = label] ;y_cor of group center
+           ifelse distancexy center_x center_y > 0.2
+           [facexy center_x center_y forward 3.3] ;  average seal travels 9.840 km/hour during winter -> 164m/min -> 3.28 patches per tick
+          [forward 3.3]
+           ifelse distance one-of si-patches > 20
+            [facexy (random 10 ) (random 10 ) forward 3.3]
+            [move-to one-of si-patches set seals_home seals_home + 1 die]
+           if patch-here != ocean-patches [move-to one-of ocean-patches in-radius 10]
+;           ask seals with [x = label] [if distance one-of si-patches < 20  [set seals_home seals_home + 1 die]]
+           ]
+           ]
+;forward 3.3
 end
 
 ;
@@ -409,7 +409,7 @@ end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
 to eat-seals
-   ask seals[ if any? sharks-here[
+   ask seals[ if any? sharks in-radius 8[
       if zone = 1[
       set pred_dis  0.195 * light_level_sharks
 ;      if random-float 1 < 0.195 ;each seal 0m-200m from seal island has a 0.195 chance of being eaten every tick. That is a a 0.39 chance of predation happening and 0.5 chance being successful
