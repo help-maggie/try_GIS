@@ -409,7 +409,7 @@ end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
 to eat-seals
-   ask seals[ if any? sharks in-radius 8[
+   ask seals[ if any? sharks in-radius 6[
       if zone = 1[
       set pred_dis  0.195 * light_level_sharks
 ;      if random-float 1 < 0.195 ;each seal 0m-200m from seal island has a 0.195 chance of being eaten every tick. That is a a 0.39 chance of predation happening and 0.5 chance being successful
