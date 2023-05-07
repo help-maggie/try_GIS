@@ -1023,7 +1023,8 @@ NetLogo 6.2.2
   <experiment name="test_experiment" repetitions="1" runMetricsEveryStep="true">
     <setup>setup</setup>
     <go>go</go>
-    <timeLimit steps="500"/>
+    <timeLimit steps="361"/>
+    <metric>ticks</metric>
     <metric>count seals</metric>
     <metric>group_num</metric>
     <metric>(group_num_in - 1000)</metric>
