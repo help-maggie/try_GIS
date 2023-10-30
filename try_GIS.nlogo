@@ -446,7 +446,7 @@ end
 to seal_predation_groupsize
   foreach group_num_list
       [x -> let seal_num (count seals with [x = label])
-        let num .05
+        let num .01
 ;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
@@ -484,7 +484,7 @@ end
 to seal_predation_groupsize_in
   foreach group_num_list_in
       [x -> let seal_num (count seals with [x = label])
-        let num .05
+        let num .01
 ;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
