@@ -1,17 +1,4 @@
-"BehaviorSpace results (NetLogo 6.2.2)"
-"try_GIS.nlogo"
-"test_experiment"
-"min-pxcor","max-pxcor","min-pycor","max-pycor"
-"-674","674","-518","518"
-"[run number]","1","1","1","1","1","1","1","1"
-"natural_light_level","370",,,,,,,
-"Light_Pollution","true",,,,,,,
-"[reporter]","ticks","count seals","group_num","(group_num_in - 1000)","eaten_seals","eaten_seals_in","seals_foraging","seals_home"
-"[final]","27","2508","450","550","451","557","114","60"
-"[min]","0","0","0","0","0","0","0","0"
-"[max]","27","2510","450","550","451","557","114","60"
-"[mean]","26.848060775689724","1379.7768892443023","225.2015193922431","279.6669332267093","187.77928828468612","213.50819672131146","39.207916833266694","32.03958416633347"
-"[steps]","2500","2500","2500","2500","2500","2500","2500","2500"
+
 
 "[all run data]","ticks","count seals","group_num","(group_num_in - 1000)","eaten_seals","eaten_seals_in","seals_foraging","seals_home"
 ,"0","0","0","0","0","0","0","0"
