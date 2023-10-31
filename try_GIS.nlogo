@@ -176,32 +176,34 @@ ifelse natural_light_level <= 300 / 4 [set light_level_seals 0.4] [set light_lev
 ;    gis:create-turtles-inside-polygon this-vector-feature seals 10 ]
 
   ask one-of si-patches [ ;sprouts a number of seals from seal island every time step with some probability of occuring based on what time of day it is
-    if ticks <= 60[set a .296 * light_level_seals
+                          ; .24 is to help match data
+    if ticks <= 60[set a .296 * light_level_seals * .24
         sprout_seals_out]
-      if (ticks > 60 and ticks <= 120)[set a .189 * light_level_seals
+      if (ticks > 60 and ticks <= 120)[set a .189 * light_level_seals * .24
         sprout_seals_out]
-      if (ticks > 120 and ticks <= 180)[set a .202 * light_level_seals
+      if (ticks > 120 and ticks <= 180)[set a .202 * light_level_seals * .24
         sprout_seals_out]
-      if (ticks > 180 and ticks <= 240)[set a .102 * light_level_seals
+      if (ticks > 180 and ticks <= 240)[set a .102 * light_level_seals * .24
         sprout_seals_out]
-      if (ticks > 240 and ticks <= 300)[set a .1213 * light_level_seals
+      if (ticks > 240 and ticks <= 300)[set a .1213 * light_level_seals * .24
         sprout_seals_out]
-      if (ticks > 300 and ticks <= 360)[set a .059 * light_level_seals
+      if (ticks > 300 and ticks <= 360)[set a .059 * light_level_seals * .24
         sprout_seals_out]
   ]
 
-   ask patch (-300 + (random 600)) min-pycor [         ;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
-          if ticks <= 60[set a_2 .3708 * light_level_seals
+   ask patch (-300 + (random 600)) min-pycor [;sprouts a number of seals from south every time step with some probability of occuring based on what time of day it is
+                                              ; .18 is to help match data
+          if ticks <= 60[set a_2 .3708 * light_level_seals * .18
             sprout_seals_in]
-          if (ticks > 60 and ticks <= 120)[set a_2 .23596 * light_level_seals
+          if (ticks > 60 and ticks <= 120)[set a_2 .23596 * light_level_seals * .18
             sprout_seals_in]
-          if (ticks > 120 and ticks <= 180)[set a_2 .14232 * light_level_seals
+          if (ticks > 120 and ticks <= 180)[set a_2 .14232 * light_level_seals * .18
             sprout_seals_in]
-          if (ticks > 180 and ticks <= 240)[set a_2 .11236 * light_level_seals
+          if (ticks > 180 and ticks <= 240)[set a_2 .11236 * light_level_seals * .18
             sprout_seals_in]
-          if (ticks > 240 and ticks <= 300)[set a_2 .0824 * light_level_seals
+          if (ticks > 240 and ticks <= 300)[set a_2 .0824 * light_level_seals * .18
             sprout_seals_in]
-          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals
+          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals * .18
             sprout_seals_in]
         ]
 
