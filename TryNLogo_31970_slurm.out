@@ -1,0 +1,2449 @@
+NetLogo 6.2.2
+Thu Nov  2 10:14:26 EDT 2023
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 160 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 160 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 160 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 161 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 160 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 161 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 161 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 160 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 161 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 159 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 161 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 158 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 148 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 145 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 147 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 146 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 182 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 183 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 181 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 180 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 182 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 183 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 181 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 180 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 181 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 183 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 182 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 180 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 181 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 183 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 180 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+Run #1, RUNTIME ERROR: MOVE-TO expected input to be an agent but got NOBODY instead.
+error while seal 181 running MOVE-TO
+  called by (anonymous command: [ x -> ask seals with [ x = label ] [ let mean [ xcor ] of seals with [ x = label ] let mean [ ycor ] of seals with [ x = label ] ifelse distancexy center_x center_y > 0.2 [ facexy center_x center_y forward 3.3 ] [ face one-of si-patches forward 3.3 ] ifelse distance one-of si-patches > 20 [ forward 3.3 ] [ move-to one-of si-patches set seals_home seals_home + 1 die ] if patch-here != ocean-patches [ move-to one-of ocean-patches in-radius 3 ] ] ])
+  called by procedure MOVE_SEALS
+  called by procedure GO
+  called by procedure __EVALUATOR
+org.nlogo.nvm.ArgumentTypeException: MOVE-TO expected input to be an agent but got NOBODY instead.
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:181)
+	at org.nlogo.nvm.AnonymousCommand.perform(AnonymousProcedure.scala:158)
+	at org.nlogo.prim.etc._foreach.perform(_foreach.scala:33)
+	at org.nlogo.nvm.Context.runExclusive(Context.java:133)
+	at org.nlogo.nvm.ExclusiveJob.run(ExclusiveJob.scala:39)
+	at org.nlogo.nvm.Context.runExclusiveJob(Context.java:177)
+	at org.nlogo.prim._asm_procedurego_ask_50.perform(:1)
+	at org.nlogo.nvm.Context.stepConcurrent(Context.java:107)
+	at org.nlogo.nvm.ConcurrentJob.step(ConcurrentJob.scala:65)
+	at org.nlogo.job.JobThread.runPrimaryJobs(JobThread.scala:133)
+	at org.nlogo.job.JobThread.$anonfun$run$1(JobThread.scala:68)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+	at org.nlogo.api.Exceptions$.handling(Exceptions.scala:41)
+	at org.nlogo.job.JobThread.run(JobThread.scala:66)
+
+real	166m17.247s
+user	188m26.083s
+sys	10m19.952s
+Thu Nov  2 13:00:43 EDT 2023
