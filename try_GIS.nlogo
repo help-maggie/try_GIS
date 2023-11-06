@@ -411,7 +411,7 @@ end
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;
 to eat-seals
-   ask seals[ if any? sharks in-radius 2[
+   ask seals[ if any? sharks in-radius .25[
       if zone = 1[
       set pred_dis  0.195 * light_level_sharks
 ;      if random-float 1 < 0.195 ;each seal 0m-200m from seal island has a 0.195 chance of being eaten every tick. That is a a 0.39 chance of predation happening and 0.5 chance being successful
@@ -448,7 +448,7 @@ end
 to seal_predation_groupsize
   foreach group_num_list
       [x -> let seal_num (count seals with [x = label])
-        let num .01
+        let num .005
 ;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
@@ -486,7 +486,7 @@ end
 to seal_predation_groupsize_in
   foreach group_num_list_in
       [x -> let seal_num (count seals with [x = label])
-        let num .01
+        let num .005
 ;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
