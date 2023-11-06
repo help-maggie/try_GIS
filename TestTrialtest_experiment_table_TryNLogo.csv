@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 "BehaviorSpace results (NetLogo 6.2.2)"
 "try_GIS.nlogo"
 "test_experiment"
 "11/05/2023 08:16:32:013 -0500"
 "min-pxcor","max-pxcor","min-pycor","max-pycor"
 "-674","674","-518","518"
+=======
+>>>>>>> 52f72f7074bc3d3ed49a621dba04219c8e1bfa77
 "[run number]","natural_light_level","Light_Pollution","[step]","ticks","count seals","group_num","(group_num_in - 1000)","eaten_seals","eaten_seals_in","seals_foraging","seals_home"
 "1","370","true","0","0","0","0","0","0","0","0","0"
 "1","370","true","1","1","0","0","0","0","0","0","0"
