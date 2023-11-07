@@ -211,9 +211,10 @@ ifelse natural_light_level <= 300 / 4 [set light_level_seals 0.4] [set light_lev
     move_seals    ;run move_seals function
   ]
 
+  tick
+
   if ticks > 360 ;resets everything every 360 ticks to simulate restarting every day since data starts aroung 730 and ends 1330
     [stop];[setup]
-  tick
 end
 
 ;;;;;sprout_seals_out has seals group together in groups of 2,3,4,5,or 6 seals with varying probabilities and sprout from
@@ -447,7 +448,7 @@ end
 to seal_predation_groupsize
   foreach group_num_list
       [x -> let seal_num (count seals with [x = label])
-        let num .0025
+        let num .008
 ;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
@@ -485,7 +486,7 @@ end
 to seal_predation_groupsize_in
   foreach group_num_list_in
       [x -> let seal_num (count seals with [x = label])
-        let num .0025
+        let num .008
 ;        ask one-of (seals with [x = label])[ask patch-here [print(zone)]]
         if seal_num = 6 [
         if random-float 1 < 0.00353 * pred_dis * num[
