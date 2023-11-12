@@ -203,7 +203,7 @@ ifelse natural_light_level <= 300 / 4 [set light_level_seals 0.4] [set light_lev
             sprout_seals_in]
           if (ticks > 240 and ticks <= 300)[set a_2 .0824 * light_level_seals * .18
             sprout_seals_in]
-          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals
+          if (ticks > 300 and ticks <= 360)[set a_2 .0637 * light_level_seals * .18
             sprout_seals_in]
         ]
 
@@ -213,7 +213,7 @@ ifelse natural_light_level <= 300 / 4 [set light_level_seals 0.4] [set light_lev
 
   tick
 
-  if ticks > 1000 ;resets everything every 360 ticks to simulate restarting every day since data starts aroung 730 and ends 1330
+  if ticks > 500 ;resets everything every 360 ticks to simulate restarting every day since data starts aroung 730 and ends 1330
     [stop];[setup]
 end
 
@@ -224,88 +224,95 @@ to sprout_seals_out
   let dummy_var random-float 1
 
   if dummy_var < 0.0062 * a
-  [set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 7 group_num_distribution_list_in
+  [let shift random 90
+   set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 7
-  [ facexy (31 + random 8 ) (50 + random 4 )
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 
   if dummy_var > 0.0062 * a and dummy_var < 0.0668 * a
-  [ set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 8 group_num_distribution_list_in
+  [let shift random 90
+   set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 8
-  [ facexy (31 + random 8 ) (50 + random 4 )
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 
   if dummy_var > 0.0668 * a and dummy_var < 0.3085 * a
-  [ set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 9 group_num_distribution_list_in
+   [let shift random 90
+    set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 9
-  [ facexy (31 + random 8 ) (50 + random 4 )
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 
   if dummy_var > 0.3085 * a and dummy_var < 0.6914 * a
-  [ set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 10 group_num_distribution_list_in
+  [let shift random 90
+   set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 10
-  [ facexy (31 + random 8 ) (50 + random 4 )
+   [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 
   if dummy_var > 0.6914 * a and dummy_var < 0.9331 * a
-  [ set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 11 group_num_distribution_list_in
+  [let shift random 90
+   set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 11
-  [ facexy (31 + random 8 ) (50 + random 4 )
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 
 
   if dummy_var > 0.9331 * a and dummy_var < 0.9937 * a
-  [ set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 12 group_num_distribution_list_in
+  [let shift random 90
+   set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 12
-  [ facexy (random 10 * .5) (random 10 * .5)
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 
     if dummy_var > 0.9937 * a
-  [ set group_num_in group_num_in + 1
-   set group_num_distribution_list_in lput 13 group_num_distribution_list_in
+  [let shift random 90
+   set group_num group_num + 1
+   set group_num_distribution_list lput 7 group_num_distribution_list
    sprout-seals 13
-  [ facexy (random 10 * .5) (random 10 * .5)
+  [ set heading (135 + shift)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num_in]
-    set group_num_list_in lput group_num_in group_num_list_in
+    set label group_num]
+    set group_num_list lput group_num group_num_list
   ]
 end
 
@@ -314,81 +321,75 @@ to sprout_seals_in
 let dummy_var random-float 1
 
 if dummy_var < 0.0668 * a_2
-  [let shift random 90
-    set group_num group_num + 1
-   set group_num_distribution_list lput 1 group_num_distribution_list
+  [set group_num_in group_num_in + 1
+   set group_num_distribution_list_in lput 1 group_num_distribution_list_in
    sprout-seals 1
-  [ set heading (135 + shift)
+  [ facexy (random 10 * .5) (random 10 * .5)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num]
-    set group_num_list lput group_num group_num_list
+    set label group_num_in]
+    set group_num_list_in lput group_num group_num_list_in
   ]
 
   if dummy_var > 0.0668 * a_2 and dummy_var < 0.3085 * a_2
-  [ let shift random 90
-    set group_num group_num + 1
-    set group_num_distribution_list lput 2 group_num_distribution_list
+  [set group_num_in group_num_in + 1
+   set group_num_distribution_list_in lput 1 group_num_distribution_list_in
     sprout-seals 2
-  [ set heading (135 + shift)
+  [ facexy (random 10 * .5) (random 10 * .5)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num]
-    set group_num_list lput group_num group_num_list
+    set label group_num_in]
+    set group_num_list_in lput group_num group_num_list_in
   ]
 
     if dummy_var > 0.3085 * a_2 and dummy_var < 0.6914 * a_2
-  [ let shift random 90
-    set group_num group_num + 1
-    set group_num_distribution_list lput 3 group_num_distribution_list
+  [set group_num_in group_num_in + 1
+   set group_num_distribution_list_in lput 1 group_num_distribution_list_in
     sprout-seals 3
-  [ set heading (135 + shift)
+  [ facexy (random 10 * .5) (random 10 * .5)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num]
-    set group_num_list lput group_num group_num_list
+    set label group_num_in]
+    set group_num_list_in lput group_num group_num_list_in
   ]
 
   if dummy_var > 0.6914 * a_2 and dummy_var < 0.9331 * a_2
- [ let shift random 90
-    set group_num group_num + 1
-    set group_num_distribution_list lput 4 group_num_distribution_list
+  [set group_num_in group_num_in + 1
+   set group_num_distribution_list_in lput 1 group_num_distribution_list_in
     sprout-seals 4
-  [ set heading (135 + shift)
+   [ facexy (random 10 * .5) (random 10 * .5)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num]
-    set group_num_list lput group_num group_num_list
+    set label group_num_in]
+    set group_num_list_in lput group_num group_num_list_in
   ]
 
 if dummy_var > 0.9331 * a_2 and dummy_var < 0.9937 * a_2
- [ let shift random 90
-   set group_num group_num + 1
-    set group_num_distribution_list lput 5 group_num_distribution_list
+  [set group_num_in group_num_in + 1
+   set group_num_distribution_list_in lput 1 group_num_distribution_list_in
     sprout-seals 5
-  [ set heading 180
+  [ facexy (random 10 * .5) (random 10 * .5)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num]
-    set group_num_list lput group_num group_num_list
+    set label group_num_in]
+    set group_num_list_in lput group_num group_num_list_in
   ]
 
 if dummy_var > 0.9937 * a_2 and dummy_var < a_2
- [ let shift random 90
-   set group_num group_num + 1
-    set group_num_distribution_list lput 6 group_num_distribution_list
+  [set group_num_in group_num_in + 1
+   set group_num_distribution_list_in lput 1 group_num_distribution_list_in
     sprout-seals 6
-  [ set heading 180
+  [ facexy (random 10 * .5) (random 10 * .5)
     set shape "dot"
     set color grey
     set size 10
-    set label group_num]
-    set group_num_list lput group_num group_num_list
+    set label group_num_in]
+    set group_num_list_in lput group_num group_num_list_in
   ]
 end
 
